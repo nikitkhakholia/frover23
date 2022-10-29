@@ -1,7 +1,7 @@
-import { moveBack, moveFront, moveLeft, moveRight } from "../../Components/Controller/apis"
-import Controller from "../../Components/Controller/Controller"
+import { moveBack, moveFront, moveLeft, moveRight } from "../Components/Controller/apis"
+import Controller from "../Components/Controller/Controller"
 
-const Home = () => {
+const RoverControlls = () => {
     return <div className="grid grid-cols-5 items-center p-4">
         <div className="col-start-1 col-end-1">
             <Controller
@@ -35,4 +35,4 @@ const Home = () => {
 
 
 }
-export default Home
+export default RoverControlls

@@ -1,21 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Pages/Home/Home';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Wrapper from './Wrapper';
+import { AuthProvider } from './Contexts/AuthContext';
+import RoverControlls from './Pages/RoverControlls';
+import Dashboard from './Pages/Dashboard';
+import Analysis from './Pages/Analysis';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className='bg-black min-h-screen'>
     <BrowserRouter>
-    <Wrapper>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-    </Routes>
-    </Wrapper>
-  </BrowserRouter>
+      <AuthProvider>
+        <Wrapper>
+         <Routes>
+          
+            <Route path='/control' element={<RoverControlls />} />
+            <Route path='/analysis' element={<Analysis />} />
+            <Route path='/' element={<Dashboard />} />
+          </Routes>
+        </Wrapper>
+      </AuthProvider>
+    </BrowserRouter>
   </div>
 );
 

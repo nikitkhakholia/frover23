@@ -14,28 +14,28 @@ function Controller({
                     aspect-square col-start-2 cursor-pointer
                     bg-slate-800 active:bg-slate-900 rounded-full
                     flex items-center justify-center "
-                onClick={upClicked}><span class="material-symbols-outlined">
+                onClick={upClicked}><span className="material-symbols-outlined">
                     {upIcon}
                 </span></div>
             <div className="
                     aspect-square col-start-1 cursor-pointer
                     bg-slate-800 active:bg-slate-900 rounded-full
                     flex items-center justify-center "
-                onClick={leftClicked}><span class="material-symbols-outlined">
+                onClick={leftClicked}><span className="material-symbols-outlined">
                     {leftIcon}
                 </span></div>
             <div className="
                     aspect-square col-start-3 cursor-pointer
                     bg-slate-800 active:bg-slate-900 rounded-full
                     flex items-center justify-center "
-                onClick={rightClicked}><span class="material-symbols-outlined">
+                onClick={rightClicked}><span className="material-symbols-outlined">
                     {rightIcon}
                 </span></div>
             <div className="
                     aspect-square col-start-2 cursor-pointer
                     bg-slate-800 active:bg-slate-900 rounded-full
                     flex items-center justify-center "
-                onClick={downClicked}><span class="material-symbols-outlined">
+                onClick={downClicked}><span className="material-symbols-outlined">
                     {downIcon}
                 </span></div>
         </div>
