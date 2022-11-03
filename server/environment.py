@@ -7,6 +7,7 @@ class EnvironmentSensors:
     def __init__(self):
         self.sense = SenseHat()
         self.recordData=False
+        self.sense.startRecording()
 
     def liveData(self):
         humidity = self.sense.get_humidity()

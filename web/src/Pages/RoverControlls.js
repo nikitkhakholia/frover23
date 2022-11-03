@@ -16,7 +16,7 @@ const RoverControlls = () => {
 
 
         <div className="col-start-2 col-end-5 p-4">
-            <img className="w-full object-cover" src={"http://192.168.1.2:5000/video"} alt="..." />
+            <img className="w-full object-cover" src={"http://192.168.133.134:5000/video"} alt="..." />
         </div>
 
 

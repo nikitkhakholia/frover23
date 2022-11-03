@@ -1,18 +1,25 @@
 import { useEffect } from "react"
 
-const CircularProgress = ({ progressName = "", progressValue = 0 }) => {
+const CircularProgress = ({ progressName = "", progressValue = 0, valueSymbol = "" }) => {
     useEffect(() => {
-        var count = 0
-        var ele = document.getElementById(`${progressName}Value`)
-        setInterval(() => {
-            if (count === progressValue) {
-                clearInterval()
-            } else {
-                count += 1
-                ele.innerText = count + "%"
-            }
-        }, 5)
-    }, [progressValue, progressName]);
+       
+        if (progressValue > 0) {
+            
+            var count = 0
+            var ele = document.getElementById(`${progressName}Value`)
+            setInterval(() => {
+                if (count < progressValue) {
+                    count += 1
+                    ele.innerHTML = "" + count + " " + valueSymbol
+                } else {
+                    clearInterval()
+
+                }
+            }, 5)
+        }else{
+            document.getElementById(`${progressName}Value`).innerText="Loading..."
+        }
+    }, [progressValue]);
     return <div>
 
 
@@ -32,7 +39,7 @@ const CircularProgress = ({ progressName = "", progressValue = 0 }) => {
                         border-green-500
                         flex flex-col items-center justify-center
                         ">
-                    <div className="text-white font-black text-4xl" id={`${progressName}Value`}></div><br/>
+                    <div className="text-white" id={`${progressName}Value`}></div><br />
                     <div className="text-white font-black ">{progressName}</div>
                 </div>
             </div>
@@ -45,11 +52,11 @@ const CircularProgress = ({ progressName = "", progressValue = 0 }) => {
             >
                 <defs>
                     <linearGradient id="GradientColor">
-                        <stop offset="0%" stop-color="#e91e63" />
-                        <stop offset="100%" stop-color="#673ab7" />
+                        <stop offset="0%" stopColor="#e91e63" />
+                        <stop offset="100%" stopColor="#673ab7" />
                     </linearGradient>
                 </defs>
-                <circle cx="50" cy="50" r="45" stroke-linecap="round"
+                <circle cx="50" cy="50" r="45" strokeLinecap="round"
                     style={{ strokeDasharray: "283", strokeDashoffset: `${283 - (283 * progressValue / 100)}` }}
                     className="
                         fill-none stroke-[url(#GradientColor)] stroke-[10%]
