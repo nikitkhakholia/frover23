@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import CircularProgress from "../Components/CircularProgress/CircularProgress"
+import { ROVER_IP } from "../env";
 
 var Highcharts = require('highcharts');
-// require('highcharts/modules/exporting')(Highcharts);
 const Analysis = () => {
     const [temperatureData, setTemperatureData] = useState([])
     const [humidityData, setHumidityData] = useState([])
@@ -11,7 +11,7 @@ const Analysis = () => {
     const [sensorData, setSensorData] = useState({ temperature: 0, humidity: 0, moisture: 0, pressureData: 0, co2: 0 })
 
     const updateLiveData = () => {
-        fetch("http://192.168.133.134:5000/livedata", { method: "POST" })
+        fetch(ROVER_IP+"/livedata", { method: "POST" })
             .then(resp => resp.json())
             .then(data => {
                 setSensorData(data)
@@ -67,7 +67,6 @@ const Analysis = () => {
         }
     }, [dataLoaded])
     return <div className="flex flex-col items-center text-white">
-        {dataLoaded}
         <div className="
             p-8 w-8/12 my-4 rounded-2xl
             grid grid-cols-5 gap-4 

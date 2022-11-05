@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import AuthContext from "./Contexts/AuthContext";
+import { ROVER_IP } from "./env";
 
 const Wrapper = ({ children }) => {
 
@@ -33,11 +34,22 @@ const Wrapper = ({ children }) => {
                             "
                             placeholder="Authentication Code"
 
-                            onInput={e=>{
-                                if((""+e.target.value).trim().length===6){
-                                    setAuthCode((""+e.target.value).trim())
-                                    document.getElementById("auth-code-error").classList.add('hidden')
-                                }else{
+                            onInput={e => {
+                                if (("" + e.target.value).trim().length === 6) {
+                                    fetch(`${ROVER_IP}/validateCode`, {
+                                        method: "POST",
+                                        body: JSON.stringify({ code: e.target.value.trim() })
+                                    }).then(resp => resp.json()).then(data => {
+                                        if (data.success) {
+                                            setAuthCode(("" + e.target.value).trim())
+                                            document.getElementById("auth-code-error").classList.add('hidden')
+                                        } else {
+                                            e.target.value = ""
+                                            document.getElementById("auth-code-error").innerText = "Invalid Code!! Please Try Again..."
+                                        }
+                                    })
+
+                                } else {
                                     document.getElementById("auth-code-error").classList.remove('hidden')
                                 }
                             }}
@@ -60,7 +72,7 @@ const Wrapper = ({ children }) => {
                 </div>
             </div>}
         <footer className="text-center text-white p-4">
-                            Made with ❤️ by Nikit Khakholia, Reuben Kurian and Pankaj Sharma.
+            Made with ❤️ by Nikit Khakholia, Reuben Kurian and Pankaj Sharma.
         </footer>
     </div>
 }
