@@ -1,1 +1,7 @@
 Instructions to run the ML webapp
+
+https://github.com/PankajSharma0308/Plant-Disease-Diagnosis-Flask
+
+cd into the directory where the app.py file is stored.
+
+use "flask run"
