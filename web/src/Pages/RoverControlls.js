@@ -30,6 +30,7 @@ const RoverControlls = () => {
                 rightIcon="camera"
                 downIcon='sprinkler'
                 leftIcon="wb_twilight"
+                rightClicked={()=>window.location="http://localhost:80/"}
             />
         </div>
 
