@@ -1,224 +1,180 @@
-.area
-{
-	margin:0px;
-	padding:0px;
-	
+* {
+  font-family: "Raleway", sans-serif;
+  background-color: "black";
 }
 
-.sign
-{
-    margin-top:300px;
+.area {
+  margin: 0px;
+  padding: 0px;
 }
 
-
-.main
-{
-	margin-left:30px;
-	margin-right:20px;
-	
-}
-.bar
-{
-
-    background-color: #39424E;
-    border-radius:4px;
-    min-height: 20px;
-    padding: 8px;
-    
-    border: 3px solid rgb(57,66,125);
-    color:white;
-    
-
+.sign {
+  margin-top: 300px;
 }
 
-.ubar
-{
-	margin-bottom:0px;
-	padding-bottom: 0px;
+.main {
+  margin-left: 30px;
+  margin-right: 20px;
 }
-.space
-{
-	padding-left:1px;
-	padding-right: 15px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	color:white;
-}
-.space:hover
-{
-	border-bottom: 5px solid #2EC866;
-	
-}
-.lspace
-{
-	padding-left: 100px;
-	padding-right:150px;
-}
-.nbar
-{
-	min-height: 68px;
-	padding-top:10px;
-	color:white;
-	font-size:15px;
-	font-weight: bold;
-}
-.ispace
-{
-	padding-right:8px;
-	font-size: 15px;
-}
-.lgspace
-{
-	margin-left:200px;
-}
-.log
-{
-	margin-left:100px;
-	margin-top:100px;
-}
-.cspace
-{
-	margin-top: 70px;
-	margin-left:100px;
+.bar {
+  background-color: #39424e;
+  border-radius: 4px;
+  min-height: 20px;
+  padding: 8px;
+
+  border: 3px solid rgb(57, 66, 125);
+  color: #000000;
 }
 
-.foot
-{
-
-    background-color: #222222;
-    color:white;
-    margin-top:100px;
-    margin-bottom:0px;
-    padding-top:30px;
-    padding-bottom: 30px;
-    padding-left:0px;
-    text-align:center;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-   
+.ubar {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.space {
+  padding-left: 1px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: white;
+}
+.space:hover {
+  border-bottom: 5px solid #2ec866;
+}
+.lspace {
+  padding-left: 100px;
+  padding-right: 150px;
+}
+.nbar {
+  min-height: 68px;
+  padding-top: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.ispace {
+  padding-right: 8px;
+  font-size: 15px;
+}
+.lgspace {
+  margin-left: 200px;
+}
+.log {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.cspace {
+  margin-top: 70px;
+  margin-left: 100px;
 }
 
-.fm
-{
-	margin-left: 100px;
+.foot {
+  background-color: #222222;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 
-.fspace
-{
-	margin-left:200px;
-}
-.wdiv
-{
-	background-color: #449D44;
-	color:white;
-	text-align:center;
-
-
-}
-.pb
-{
-	border:1px solid gray;
-	padding:6px;
-	border-radius:5px;
-	margin-bottom:10px;
-	text-decoration: none;
-	max-width:500px;
-	text-align: center;
-	background-color: #449D44;
-	color:white;
-}
-.pb:hover
-{
-	background-color:#286090;
-	color:white;
-}
-.pb:a
-{
-	text-decoration: none;
-}
-a:hover
-{
-	text-decoration: none;
+.fm {
+  margin-left: 100px;
 }
 
-.pc
-{
-	border:1px solid gray;
-	padding:10px;
-	border-radius:0px;
-	text-decoration: none;
-	text-align: center;
-	background-color: #449D44;
-	color:white;
+.fspace {
+  margin-left: 200px;
+}
+.wdiv {
+  background-color: #449d44;
+  color: white;
+  text-align: center;
+}
+.pb {
+  border: 1px solid gray;
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  max-width: 500px;
+  text-align: center;
+  background-color: #449d44;
+  color: white;
+}
+.pb:hover {
+  background-color: #286090;
+  color: white;
+}
+.pb:a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
-.pbs
-{
-	margin-left:35px;
+.pc {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 0px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #449d44;
+  color: white;
 }
 
-.contain
-{
-	margin-top:50px;
-	margin-left: 90px;
-}
-.tm
-{
-	margin-top:100px;
-	margin-left:135px;
+.pbs {
+  margin-left: 35px;
 }
 
-.pw
-{
-	max-width:900px;
-	
+.contain {
+  margin-top: 50px;
+  margin-left: 90px;
+}
+.tm {
+  margin-top: 100px;
+  margin-left: 135px;
 }
 
-.con
-{
-	margin-left:270px;
+.pw {
+  max-width: 900px;
 }
 
-.xm
-{
-	
-	padding: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
-
+.con {
+  margin-left: 270px;
 }
 
-
-
-.xmm
-{
-	margin-left:30px;
-	padding: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
-
+.xm {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-
-
-.cpl
-{
-	text-align: center;
+.xmm {
+  margin-left: 30px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
-.ym
-{
-	padding: 0px;
-	border:1px solid gray;
-	border-radius: 0px;
-	margin-bottom:10px;
+
+.cpl {
+  text-align: center;
+}
+.ym {
+  padding: 0px;
+  border: 1px solid gray;
+  border-radius: 0px;
+  margin-bottom: 10px;
 }
 
 pre {
-  background-color: #EEEEEE;
-  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  background-color: #eeeeee;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   margin-bottom: 10px;
   max-height: 600px;
   overflow: auto;
@@ -227,261 +183,178 @@ pre {
   white-space: pre;
 }
 
-.centered
-{
-	padding-right:70px;
+.centered {
+  padding-right: 70px;
 }
 
+@media only screen and (max-width: 1334px) and (min-width: 1010px) {
+  .lspace {
+    margin-left: 1px;
+    padding-left: 30px;
+    padding-right: 10px;
+    text-align: center;
+  }
 
+  .space {
+    color: white;
+  }
 
-
-@media only screen and (max-width:1334px) and (min-width:1010px)
-{
-
-.lspace
-{
-	margin-left:1px;
-	padding-left: 30px;
-	padding-right:10px;
-	text-align: center;
+  .lgspace {
+    margin-left: 30px;
+  }
+  .xm {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-.space
-{
+@media only screen and (max-width: 845px) and (min-width: 769px) {
+  .lspace {
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+    text-align: center;
+  }
 
-	color:white;
+  .space {
+    padding-right: 5px;
+    color: white;
+  }
+
+  .lgspace {
+    margin-left: 5px;
+  }
+
+  .ispace {
+    padding-right: 4px;
+    font-size: 10px;
+  }
+  .cspace {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+
+  .xm {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-.lgspace
-{
-	margin-left:30px;
-}
-.xm
-{
-	
-	padding: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
+@media only screen and (max-width: 770px) and (min-width: 200px) {
+  .main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-}
-
-
-
-}
-
-@media only screen and (max-width:845px) and (min-width:769px)
-{
-
-.lspace
-{
-	margin-left:1px;
-	padding-left: 10px;
-	padding-right:0px;
-	text-align: center;
-}
-
-.space
-{
-    padding-right:5px;
-	color:white;
-}
-
-.lgspace
-{
-	margin-left:5px;
-}
-
-.ispace
-{
-	padding-right:4px;
-	font-size: 10px;
-}
-.cspace
-{
-	margin-top: 70px;
-	margin-left:0px;
-}
-
-.xm
-{
-	
-	padding: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
-
-}
-
-
-
-}
-
-@media only screen and (max-width:770px) and (min-width:200px)
-{
-
-
-.main
-{
-	margin-left:0px;
-	margin-right:0px;
-	
-}
-
- .navbar-fixed-top
-    {
+  .navbar-fixed-top {
     position: relative;
-    
-    }
-.lspace
-{
-	margin-left:1px;
-	padding-left: 10px;
-	padding-right:0px;
-	text-align: center;
+  }
+  .lspace {
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .space {
+    padding-right: 5px;
+    color: white;
+  }
+  .cspace {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+
+  .lgspace {
+    margin-left: 5px;
+  }
+
+  .ispace {
+    padding-right: 4px;
+    font-size: 10px;
+  }
+
+  .xm {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-.space
-{
-    padding-right:5px;
-	color:white;
-}
-.cspace
-{
-	margin-top: 70px;
-	margin-left:0px;
-}
+@media only screen and (max-width: 199px) and (min-width: 50px) {
+  .main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-.lgspace
-{
-	margin-left:5px;
-}
+  .lspace {
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+    text-align: center;
+  }
 
-.ispace
-{
-	padding-right:4px;
-	font-size: 10px;
-}
+  .space {
+    padding-right: 5px;
+    color: white;
+  }
 
-.xm
-{
-	
-	padding: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
+  .lgspace {
+    margin-left: 5px;
+  }
 
-}
+  .ispace {
+    padding-right: 4px;
+    font-size: 10px;
+  }
+  .cspace {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
 
-
-
-}
-
-@media only screen and (max-width:199px) and (min-width:50px)
-{
-
-
-.main
-{
-	margin-left:0px;
-	margin-right:0px;
-	
+  .xm {
+    padding: 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-.lspace
-{
-	margin-left:1px;
-	padding-left: 10px;
-	padding-right:0px;
-	text-align: center;
+@media only screen and (max-width: 1010px) and (min-width: 846px) {
+  .main {
+    margin: 0px;
+  }
+
+  .cspace {
+    padding-right: 50px;
+  }
+  .pbs {
+    margin-right: 0px;
+  }
+
+  .navbar-fixed-top {
+    position: relative;
+  }
+  .lgspace {
+    margin-left: 10px;
+  }
+  .lspace {
+    padding-left: 20px;
+    padding-right: 1px;
+    text-align: center;
+  }
+  .space {
+    color: white;
+  }
+  .xm {
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
-
-.space
-{
-    padding-right:5px;
-	color:white;
-}
-
-.lgspace
-{
-	margin-left:5px;
-}
-
-.ispace
-{
-	padding-right:4px;
-	font-size: 10px;
-}
-.cspace
-{
-	margin-top: 70px;
-	margin-left:0px;
-}
-
-
-.xm
-{
-	
-	padding: 0px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
-
-}
-}
-
-@media only screen and (max-width:1010px) and (min-width:846px)
-{
-
-.main
-{
-	margin:0px;
-}
-
-
-.cspace
-{
-	padding-right: 50px;
-}
-.pbs
-{
-	margin-right:0px;
-}
-
-.navbar-fixed-top
-{
-	position:relative;
-}
-.lgspace
-{
-	margin-left:10px;
-}
-.lspace
-{
-	
-	padding-left: 20px;
-	padding-right:1px;
-	text-align: center;
-}
-.space
-{
-
-	color:white;
-}
-.xm
-{
-	
-	padding-left: 10px;
-	border:1px solid gray;
-	border-radius: 5px;
-	margin-bottom:10px;
-
-}
-
-
-
-
-
-
-}
-
