@@ -1,6 +1,8 @@
 import cv2
 from picamera2 import Picamera2
 import threading
+import time
+from datetime import datetime
 
 """
 Camera class to control camera
@@ -57,3 +59,10 @@ class Camera(threading.Thread):
             self.stopCamera()
             
             
+    def capture(self):
+        self.picam2.start_preview()
+        timestamp = datetime.now().isoformat()
+        self.picam2.start()
+        self.picam2.capture_file('/home/pi/%s.jpg' % timestamp)
+        self.picam2.stop_preview()
+        self.picam2.stop()
